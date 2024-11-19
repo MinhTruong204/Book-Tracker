@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import WallPapper from '~/component/WallPapper';
+import {Content} from '~/component/Content';
+import wallpaperImg from '~/images/sports-car-mountains-retrowave-synthwave-hd-wallpaper-uhdpaper.com-233@0@k.jpg';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <WallPapper src={wallpaperImg} />
+            <Content/>
+        </div>
+    );
 }
-
 export default App;

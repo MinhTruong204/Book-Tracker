@@ -1,0 +1,87 @@
+
+.title {
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+                                
+
+.author {
+    font-weight: 600;
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+
+.progress { 
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+                                .progressBar {
+                                    height: 0.3rem;
+                                    width: 100%; 
+                                    margin-left: 1rem;
+                                    border-radius: 20px;
+                                }
+
+                                .progressBar div {
+                                    border-radius: 20px;
+                                }
+
+.content {
+    height: 10rem; 
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+                                .content__quotes {
+                                    height: 3rem; 
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    border: 0;
+                                }
+                                                        .content__quotes__paragraph {
+                                                            display: inline;
+                                                            font-size: 1.4rem;
+                                                        }
+                                                        .content__quotes__name {
+                                                            font-size: 1.3rem;
+                                                        }
+                                .content__genres {
+                                    height: 7rem; 
+                                    font-size: 1.3rem;
+                                }
+                                                        .content__genres__title {
+                                                            font-size: 1.4rem;
+                                                        }
+                                                        .content__genres__quantity{
+                                                            font-weight: 500;
+                                                        }
+
+.newcol {
+    height: 3rem; 
+    
+}
+
+
+.booksAddBlock  {
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+.genresAddBlock {
+    height: 7rem;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.quotesAddBlock {
+    border: none;
+    opacity: 0.5;
+}

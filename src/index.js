@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from '~/reportWebVitals';
+import App from '~/App.js';
+import GlobalStyle from '~/component/GlobalStyle';
+import { DataProvider } from './component/Content/Context/DataContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+        <GlobalStyle>
+           <DataProvider> <App /> </DataProvider>
+        </GlobalStyle>
     </React.StrictMode>,
 );
 

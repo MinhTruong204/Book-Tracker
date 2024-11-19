@@ -1,0 +1,10 @@
+.logo {
+    font-size: 10rem;
+    transform: translateY(-50%);
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 0;
+}
