@@ -2,33 +2,22 @@ import Pagination from 'react-bootstrap/Pagination';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { useState } from 'react';
+import { useState , useContext } from 'react';
 
 
 
 import BlockItem from '~/component/Content/BlockItem/index';
 import style from './Section.module.css';
-
+import { DataContext } from '../Context/DataContext';
 
 const numbercolumn = {
         Books : 4,
         Quotes : 1,
         Genres : 6
-    }
-const category =   [[<i class="fa-solid fa-wallet"></i>,"Finances"],
-                            [<i class="fa-solid fa-clock"></i>,"Productivity"],
-                            [<i class="fa-solid fa-chart-simple"></i>,"Self Development"],
-                            [<i class="fa-solid fa-head-side-virus"></i>,"Psychology"],
-                            [<i class="fa-solid fa-heart"></i>,"Relationships"]] ;
+}
   
 function Section(props) {
-
-    
-
-
-
     let paginationItems = [];
-    
     let sectionName = props.sectionName;
     for(let i in props.data) {
         paginationItems.push(i);
@@ -37,11 +26,6 @@ function Section(props) {
 
     function handleClick(e) {
         setActivePagination(e);
-    }
-   
-
-    if(props.sectionName == "Books")  {
-        
     }
     return (
         <div >
@@ -89,8 +73,8 @@ function Section(props) {
                 <BlockItem 
                     data = {props.data[activePagination]} 
                     numbercolumn = {numbercolumn[props.sectionName]}
-                    sectionName = {props.sectionName}
-                    
+                    sectionName = {props.sectionName} 
+                    // rerender = {props.rerender}
                 >   
                 </BlockItem>
             </div>

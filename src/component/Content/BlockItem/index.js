@@ -9,7 +9,6 @@ import style from "./BlockItem.module.css";
 import { DataContext } from "~/component/Content/Context/DataContext";
 
 
-
 function BlockItem(props) {
   if(props.data.length > 0) {
     let arrElement = [];
@@ -87,6 +86,8 @@ function RowItem(props) {
             handleClick = {() => {
               setActiveBook(null);
             }}
+            type = "old"
+            // rerender = {props.rerender}
           >
           </BookBox>}
         </Row>
@@ -220,24 +221,69 @@ function AddBlock(props) {
   let addBlockType =  props.type == "Books" ? style.booksAddBlock : 
                       props.type == "Genres" ? 
                       style.genresAddBlock : style.quotesAddBlock;
-  
+
+  const [status,setStatus] = useState(false);
+  let newData = {
+    id : "",
+    name : "",
+    author : "",
+    totalPage : "",
+    curPage : "",
+    progress : "",
+    status : "",
+    favorite : "",
+    rating : "",
+    description : "",
+    img : "",
+    genres : {},
+    quote : []
+}
   return (props.pos == 'newcolumn') 
   ? (
     <Col lg={12/props.numbercolumn} onClick={() => console.log(props.type)}>
-      <ListGroup>
-        <ListGroup.Item className={`${style.content} ${style.newcol } ${addBlockType} ` }>
-          <h4>+ New</h4>
-        </ListGroup.Item>
-      </ListGroup>
+      {status == false
+        ? 
+        <ListGroup>
+          <ListGroup.Item className={`${style.content} ${style.newcol } ${addBlockType} `}>
+            <h4>+ New</h4>
+          </ListGroup.Item>
+        </ListGroup>
+        :
+        <BookBox  icon = {<i className={`fa-solid fa-book `}></i>}
+                  data = {newData}
+                  handleClick = {() => {
+                    setStatus(!status);
+                  }}
+                  type = "new"
+                  // rerender = {props.rerender}
+        >
+        </BookBox>
+      }
+      
+                
     </Col>
   )
   : (
-    <Col lg={12/props.numbercolumn} onClick={() => console.log(props.type)}>
-      <ListGroup>
-        <ListGroup.Item className={`${style.content} ${addBlockType}` }>
-          <h4>+ New</h4>
-        </ListGroup.Item>
-      </ListGroup>
+    <Col lg={12/props.numbercolumn}>
+      {status == false
+        ? 
+        <ListGroup>
+          <ListGroup.Item className={`${style.content} ${addBlockType}` } onClick={() => setStatus(true)}>
+            <h4>+ New</h4>
+          </ListGroup.Item>
+        </ListGroup>
+        :
+        <BookBox  icon = {<i className={`fa-solid fa-book `}></i>}
+                  data = {newData}
+                  handleClick = {() => {
+                    setStatus(false);
+                    console.log(status)
+                  }}
+                  type = "new"
+                  // rerender = {props.rerender}
+        >
+        </BookBox>
+      }
     </Col>
   );
 }

@@ -1,122 +1,110 @@
 {
-"data" : [
-  {
-    "id" : 1,
-    "name" : "Think & Grow Rich",
-    "author" : "Napoleon Hill",
-    "totalPage" : 320,
-    "curPage" : 320,
-    "progress" : 100,
-    "status" : "Reading",   
-    "favorite" : true,
-    "rating" : 4,
-    "description" : "A classic work on how to lead a successful life",
-    "img" : "https://product.hstatic.net/200000900535/product/think-and-grow-rich-13-nguyen-tac-nghi-giau-lam-giau_bia-1_6b3b106a27404b31a047620f59b956ac_1024x1024.jpg",
-    "genres" : {
-      "name" : "Personal-success",
-      "icon" :  "fa-solid fa-head-side-virus"
-    },
-    "quote" : [
-      {
-        "id" : 1,
-        "content" : "Hay",
-        "favorite" : true
-
+  "data": [
+    {
+      "id": "1",
+      "name": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "Read",
+      "favorite": true,
+      "rating": 5,
+      "description": "A classic work on how to lead a successful life",
+      "img": "https://product.hstatic.net/200000900535/product/think-and-grow-rich-13-nguyen-tac-nghi-giau-lam-giau_bia-1_6b3b106a27404b31a047620f59b956ac_1024x1024.jpg",
+      "genres": {
+        "name": "Personal-success",
+        "icon": "fa-solid fa-head-side-virus"
       },
-      {
-        "id" : 4,
-        "content" : "Dở",
-        "favorite" : false
+      "quote": [
+        {
+          "id": 1,
+          "content": "Hay",
+          "favorite": true
+        },
+        {
+          "id": 4,
+          "content": "Dở",
+          "favorite": false
+        },
+        {
+          "id": 2,
+          "content": "Bình thường",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "How to Win Friends &amp;amp;amp;amp;amp; Influence People",
+      "author": "Dale Carnegie",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "To Read",
+      "favorite": true,
+      "rating": 5,
+      "description": "You can go after the job you want--and get it You can take the job you have--and improve it",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Business",
+        "icon": "fa-solid fa-head-side-virus"
       },
-      {
-        "id" :2,
-        "content" : "Bình thường",
-        "favorite" : true
-      }
-    ]
-  },
-  {
-    "id" : 2,
-    "name" : "How to Win Friends & Influence People",
-    "author" : "Dale Carnegie",
-    "totalPage" : 320,
-    "curPage" : 320,
-    "progress" : 100,
-    "status" : "Reading",   
-    "favorite" : true,
-    "rating" : 3,
-    "description" : "You can go after the job you want--and get it You can take the job you have--and improve it",
-    "img" : "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
-    "genres" : {
-      "name" : "Business",
-      "icon" :  "fa-solid fa-head-side-virus"
+      "quote": []
     },
-    "quote" : [
-      
-    ]
-  },
-  {
-    "id" : 3,
-    "name" : "The Motivation Manifesto",
-    "author" : "Brendon Burchard",
-    "totalPage" : 256,
-    "curPage" : 256,
-    "progress" : 100,
-    "status" : "To Read",   
-    "favorite" : true,
-    "rating" : 5,
-    "description" : "The Motivation Manifesto is a poetic and powerful call to reclaim your life",
-    "img" : "https://i.thriftbooks.com/api/imagehandler/m/AC1C835EA6C7E7F585EC3F889D296016462B5796.jpeg",
-    "genres" : {
-      "name" : "Motivation",
-      "icon" :  "fa-solid fa-head-side-virus"
+    {
+      "id": "3",
+      "name": "The Motivation Manifesto",
+      "author": "Brendon Burchard",
+      "totalPage": "256",
+      "curPage": "256",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": true,
+      "rating": 5,
+      "description": "The Motivation Manifesto is a poetic and powerful call to reclaim your life",
+      "img": "https://i.thriftbooks.com/api/imagehandler/m/AC1C835EA6C7E7F585EC3F889D296016462B5796.jpeg",
+      "genres": {
+        "name": "Motivation",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": []
     },
-    "quote" : [
-      
-    ]
-  },
-  {
-    "id" : 4,
-    "name" : "How to Stop Doubting Your Greatness and Start Living an Awesome Life",
-    "author" : "Jen Sincero",
-    "totalPage" : 320,
-    "curPage" : 272 ,
-    "progress" : 272 ,
-    "status" : "Read",   
-    "favorite" : true,
-    "rating" : 5,
-    "description" : "The first ever self-development book to help millions of people around the globe transform their live",
-    "img" : "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
-    "genres" : {
-      "name" : "Self-development",
-      "icon" :  "fa-solid fa-head-side-virus"
+    {
+      "id": "4",
+      "name": "How to Stop Doubting Your Greatness and Start Living an Awesome Life",
+      "author": "Jen Sincero",
+      "totalPage": 272,
+      "curPage": 272,
+      "progress": 100,
+      "status": "Read",
+      "favorite": true,
+      "rating": 5,
+      "description": "The first ever self-development book to help millions of people around the globe transform their live",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Self-development",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": []
     },
-    "quote" : [
-      
-    ]
-  },
-  {
-    "id" : 5,
-    "name" : "The Richest Man in Babylon: with The Magic Story",
-    "author" : "Napoleon Hill",
-    "totalPage" : 108 ,
-    "curPage" : 108 ,
-    "progress" : 100,
-    "status" : "Reading",   
-    "favorite" : true,
-    "rating" : 3,
-    "description" : "A series of the most powerful financial parables ever written",
-    "img" : "https://i.thriftbooks.com/api/imagehandler/m/71EE1B6ABB2481D8684FEA8DB37772B4C81F9639.jpeg",
-    "genres" : {
-      "name" : "Financial",
-      "icon" :  "fa-solid fa-head-side-virus"
-    },
-    "quote" : [
-      
-    ]
-  }
-  
- 
-] 
-    
+    {
+      "id": "5",
+      "name": "The Richest Man in Babylon: with The Magic Story",
+      "author": "Napoleon Hill",
+      "totalPage": "108",
+      "curPage": "108",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": true,
+      "rating": 5,
+      "description": "A series of the most powerful financial parables ever written",
+      "img": "https://i.thriftbooks.com/api/imagehandler/m/71EE1B6ABB2481D8684FEA8DB37772B4C81F9639.jpeg",
+      "genres": {
+        "name": "Financial",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": []
+    }
+  ]
 }
