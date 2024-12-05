@@ -8,6 +8,7 @@ import { useState , useContext } from 'react';
 
 import BlockItem from '~/component/Content/BlockItem/index';
 import style from './Section.module.css';
+import BookBox from '../BookBox';
 import { DataContext } from '../Context/DataContext';
 
 const numbercolumn = {
@@ -23,7 +24,22 @@ function Section(props) {
         paginationItems.push(i);
     }
     const [activePagination,setActivePagination] = useState(paginationItems[0]);
-
+    const [showBookBox,setShowBookBox] = useState(false);
+    let newData = {
+      id : "",
+      name : "",
+      author : "",
+      totalPage : "",
+      curPage : "",
+      progress : "",
+      status : "",
+      favorite : "",
+      rating : "",
+      description : "",
+      img : "",
+      genres : {},
+      quote : []
+  }
     function handleClick(e) {
         setActivePagination(e);
     }
@@ -64,7 +80,20 @@ function Section(props) {
                             <i className="fa-solid fa-ellipsis"></i>
                         </Nav.Link>
                         <Nav.Item>
-                            <Button>New</Button>
+                            <Button onClick={() => setShowBookBox(true) }>New</Button>
+                            {showBookBox == true && props.sectionName == "Books"
+                                ?
+                                <BookBox  icon = {<i className={`fa-solid fa-book `}></i>}
+                                        data = {newData}
+                                        handleClick = {() => {
+                                            setShowBookBox(false);
+                                        }}
+                                        type = "new"
+                                >
+                                </BookBox>
+                                : <></>
+
+                            }
                         </Nav.Item> 
                     </Navbar>
                 </Navbar>

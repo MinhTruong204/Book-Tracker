@@ -1,6 +1,6 @@
 import { useEffect,useState ,createContext} from "react";
 
-const apiData = "http://192.168.244.2:4000/data";
+const apiData = "http://192.168.155.2:4000/data";
 const DataContext = createContext();
 
 function DataProvider({children}) {

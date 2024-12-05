@@ -72,7 +72,8 @@ function Content() {
     }
 
     sortBookByOrderAdd(section[1].data['Recently Added']);
-
+    //Swap posion in page
+    [section[1],section[2]] = [section[2],section[1]]
     try {
         return (
             <DataContext.Provider value={data}>
