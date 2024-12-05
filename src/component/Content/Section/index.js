@@ -9,7 +9,6 @@ import { useState , useContext } from 'react';
 import BlockItem from '~/component/Content/BlockItem/index';
 import style from './Section.module.css';
 import BookBox from '../BookBox';
-import { DataContext } from '../Context/DataContext';
 
 const numbercolumn = {
         Books : 4,

@@ -11,6 +11,7 @@ import style from './BookBox.module.css';
 import { DataContext } from '~/component/Content/Context/DataContext';
 import { handleData } from '~/component/Content/Context/ApiRequest';
 function BookBox(props) {
+    console.log(props.data)
     const [activeInput, setActiveInput] = useState(null);
     const [data, setData] = useState(props.data);
     const [img, setImg] = useState(data.img);
@@ -19,7 +20,6 @@ function BookBox(props) {
     function handleAciveInput(name) {
         setActiveInput(name);
     }
-
     function saveData() {
         const contentElement = document.querySelectorAll('.' + style.detailInfo__describe);
         const nameElement = document.querySelector('.' + style.name).getElementsByTagName('p')[0];
@@ -28,9 +28,11 @@ function BookBox(props) {
         const descriptionElement = contentElement.item(2).getElementsByTagName('p')[0];
         const genresNameElement = contentElement.item(3);
         const genresIconElemt = contentElement.item(3).getElementsByTagName('i')[0];
-        const totalPageElement = contentElement.item(4).getElementsByTagName('p')[0];
-        const curPageElement = contentElement.item(5).getElementsByTagName('p')[0];
-        const ratingElement = contentElement.item(7).getElementsByClassName('fa-solid');
+        const startDateElement = contentElement.item(4).getElementsByTagName('p')[0];
+        const endDateElement = contentElement.item(5).getElementsByTagName('p')[0];
+        const totalPageElement = contentElement.item(6).getElementsByTagName('p')[0];
+        const curPageElement = contentElement.item(7).getElementsByTagName('p')[0];
+        const ratingElement = contentElement.item(9).getElementsByClassName('fa-solid');
         const imageElement = document.querySelector('.' + style.img).getElementsByTagName('img')[0];
         setData({
             ...data,
@@ -42,13 +44,15 @@ function BookBox(props) {
                 name: genresNameElement != undefined ? genresNameElement.textContent : '',
                 icon: genresIconElemt != undefined ? genresIconElemt.className : '',
             },
+            startDate: startDateElement != undefined ? startDateElement.innerHTML : '',
+            endDate: endDateElement != undefined ? endDateElement.innerHTML : '',
             totalPage: totalPageElement != undefined ? totalPageElement.innerHTML : '',
             curPage: curPageElement != undefined ? curPageElement.innerHTML : '',
             progress:
                 Math.floor((parseInt(curPageElement.innerHTML) / parseInt(totalPageElement.innerHTML)) * 100) || 0,
             rating: ratingElement != undefined ? ratingElement.length : '',
             img: imageElement != undefined ? imageElement.src : '',
-            id: props.type == 'new' ? allData[allData.length - 1].id + 1 : allData[allData.length - 1].id,
+            id: props.type == 'new' ? (parseInt(allData[allData.length - 1].id) + 1 ).toString() : data.id,
         });
 
     }
@@ -100,6 +104,18 @@ function BookBox(props) {
                                     <InfoItem
                                         type="genres"
                                         data={data.genres}
+                                        handleAciveInput={handleAciveInput}
+                                        activeInput={activeInput}
+                                    ></InfoItem>
+                                     <InfoItem
+                                        type="startDate"
+                                        data={data.startDate}
+                                        handleAciveInput={handleAciveInput}
+                                        activeInput={activeInput}
+                                    ></InfoItem>
+                                     <InfoItem
+                                        type="endDate"
+                                        data={data.endDate}
                                         handleAciveInput={handleAciveInput}
                                         activeInput={activeInput}
                                     ></InfoItem>
@@ -244,6 +260,42 @@ function InfoItem(props) {
             );
 
             break;
+        case 'startDate':
+            return (
+                <li className={style.detailInfo__item}>
+                    <span className={style.detailInfo__name}>
+                        <i className="fa-solid fa-clipboard"></i>
+                        Start Date
+                    </span>
+                    <div className={style.detailInfo__describe} onClick={() => props.handleAciveInput(props.type)}>
+                        <TextOption
+                            unActiveInput={props.handleAciveInput}
+                            active={props.activeInput == 'startDate'}
+                            text={props.data}
+                            type={props.type}
+                        ></TextOption>
+                    </div>
+                </li>
+            );
+            break;
+        case 'endDate':
+        return (
+            <li className={style.detailInfo__item}>
+                <span className={style.detailInfo__name}>
+                    <i className="fa-solid fa-clipboard"></i>
+                    End Date
+                </span>
+                <div className={style.detailInfo__describe} onClick={() => props.handleAciveInput(props.type)}>
+                    <TextOption
+                        unActiveInput={props.handleAciveInput}
+                        active={props.activeInput == 'endDate'}
+                        text={props.data}
+                        type={props.type}
+                    ></TextOption>
+                </div>
+            </li>
+        );
+        break;
         case 'description':
             return (
                 <li className={style.detailInfo__item}>

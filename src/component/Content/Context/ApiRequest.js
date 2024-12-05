@@ -19,8 +19,8 @@ function handleData(data, method) {
         console.log(`${method} Error`)
 
     }
-    location.reload()
-    
+    // location.reload()
+    console.log(data)
 }
 
 export { handleData };

@@ -159,8 +159,6 @@ function BookItem(props) {
   data.forEach(book => {
     if(book.id == props.id) thisBook = book;
   });
-
-
   return (
     <Col lg={12/props.numbercolumn} onClick={() => props.handleClick(thisBook)}>
       <ListGroup>
