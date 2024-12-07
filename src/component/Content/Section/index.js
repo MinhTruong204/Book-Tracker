@@ -6,7 +6,7 @@ import { useState , useContext } from 'react';
 
 
 
-import BlockItem from '~/component/Content/BlockItem/index';
+import {BlockItem} from '~/component/Content/BlockItem/index';
 import style from './Section.module.css';
 import BookBox from '../BookBox';
 
@@ -102,7 +102,6 @@ function Section(props) {
                     data = {props.data[activePagination]} 
                     numbercolumn = {numbercolumn[props.sectionName]}
                     sectionName = {props.sectionName} 
-                    // rerender = {props.rerender}
                 >   
                 </BlockItem>
             </div>

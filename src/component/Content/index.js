@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from 'react';
 
 import Header from '~/component/Content/Header';
 import Section from '~/component/Content/Section';
-import BookBox from '~/component/Content/BookBox';
+import {BookBox} from '~/component/Content/BookBox';
 import { DataContext } from './Context/DataContext';
 
 function Content() {
@@ -61,9 +61,9 @@ function Content() {
             if (section[2].data['Gallery'].find((e) => e.genres.name == data[i].genres.name) == undefined)
                 section[2].data['Gallery'].push({ genres: data[i].genres, count: 1 });
             else {
-                for (let i = 0; i < section[2].data['Gallery'].length; i++) {
-                    if (section[2].data['Gallery'][i].genres.name == data[i].genres.name)
-                        section[2].data['Gallery'][i].count++;
+                for (let j = 0; j < section[2].data['Gallery'].length; j++) {
+                    if (section[2].data['Gallery'][j].genres.name == data[i].genres.name)
+                        section[2].data['Gallery'][j].count++;
                 }
             }
         }
