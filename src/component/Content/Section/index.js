@@ -63,7 +63,7 @@ function Section(props) {
                 </Pagination>
                 <Navbar>
                     <Navbar className="menu">
-                        <Nav.Link className={`p-3 ${style.filter} ${style.menu__item}`} href="">
+                        {/* <Nav.Link className={`p-3 ${style.filter} ${style.menu__item}`} href="">
                             Filter
                         </Nav.Link>
                         <Nav.Link className={`p-3 ${style.menu__item}`} href="">
@@ -77,7 +77,8 @@ function Section(props) {
                         </Nav.Link>
                         <Nav.Link className={`p-3 ${style.menu__item}`} href="">
                             <i className="fa-solid fa-ellipsis"></i>
-                        </Nav.Link>
+                        </Nav.Link> */}
+                        {props.sectionName == "Books" && 
                         <Nav.Item>
                             <Button onClick={() => setShowBookBox(true) }>New</Button>
                             {showBookBox == true && props.sectionName == "Books"
@@ -94,6 +95,7 @@ function Section(props) {
 
                             }
                         </Nav.Item> 
+                        }
                     </Navbar>
                 </Navbar>
             </div>

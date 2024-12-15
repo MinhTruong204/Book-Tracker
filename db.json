@@ -21,18 +21,8 @@
       "quote": [
         {
           "id": 1,
-          "content": "Hay",
-          "favorite": true
-        },
-        {
-          "id": 4,
-          "content": "Dở",
+          "content": "Absolutely loved it! The story was gripping, the characters felt real, and the writing was beautiful",
           "favorite": false
-        },
-        {
-          "id": 2,
-          "content": "Bình thường",
-          "favorite": true
         }
       ]
     },
@@ -54,18 +44,24 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": []
+      "quote": [
+        {
+          "id": 4,
+          "content": "I wanted to like it, but the writing style was confusing, and the story lacked emotional depth.",
+          "favorite": false
+        }
+      ]
     },
     {
       "id": "3",
-      "name": "The Motivation Manifesto test 1",
+      "name": "The Motivation Manifesto",
       "author": "Brendon Burchard",
       "totalPage": "256",
       "curPage": "256",
       "progress": 100,
       "status": "Reading",
       "favorite": true,
-      "rating": 3,
+      "rating": 4,
       "startDate": "22/12/2024",
       "endDate": "22/12/2024",
       "description": "The Motivation Manifesto is a poetic and powerful call to reclaim your life",
@@ -74,11 +70,17 @@
         "name": "Motivation",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": []
+      "quote": [
+        {
+          "id": 2,
+          "content": "There were moments of brilliance, but the overall story felt disjointed.",
+          "favorite": true
+        }
+      ]
     },
     {
       "id": "4",
-      "name": "How to Stop Doubting Your Greatness and Start Living an Awesome Life",
+      "name": "How to Stop Doubting Your Greatness",
       "author": "Jen Sincero",
       "totalPage": "272",
       "curPage": "272",
@@ -94,10 +96,146 @@
         "name": "Self-development",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": []
+      "quote": [
+        {
+          "id": 1,
+          "content": "Absolutely loved it! The story was gripping, the characters felt real, and the writing was beautiful",
+          "favorite": false
+        }
+      ]
     },
     {
       "id": "5",
+      "name": "How to Win Friends Influence People",
+      "author": "Dale Carnegie",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "To Read",
+      "favorite": false,
+      "rating": 5,
+      "description": "You can go after the job you want--and get it You can take the job you have--and improve it",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Business",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 4,
+          "content": "I wanted to like it, but the writing style was confusing, and the story lacked emotional depth.",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": true,
+      "rating": 5,
+      "description": "A classic work on how to lead a successful life",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://product.hstatic.net/200000900535/product/think-and-grow-rich-13-nguyen-tac-nghi-giau-lam-giau_bia-1_6b3b106a27404b31a047620f59b956ac_1024x1024.jpg",
+      "genres": {
+        "name": "Personal-success",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 2,
+          "content": "There were moments of brilliance, but the overall story felt disjointed.",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Give to Grow",
+      "author": "Dale Carnegie",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "Read",
+      "favorite": false,
+      "rating": 5,
+      "description": "You can go after the job you want--and get it You can take the job you have--and improve it",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Business",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 1,
+          "content": "An instant favorite. The book kept me hooked from start to finish with its twists and emotional depth",
+          "favorite": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "The Motivation Manifesto",
+      "author": "Brendon Burchard",
+      "totalPage": "256",
+      "curPage": "256",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": true,
+      "rating": 4,
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "description": "The Motivation Manifesto is a poetic and powerful call to reclaim your life",
+      "img": "https://i.thriftbooks.com/api/imagehandler/m/AC1C835EA6C7E7F585EC3F889D296016462B5796.jpeg",
+      "genres": {
+        "name": "Motivation",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 4,
+          "content": "The premise sounded intriguing, but the execution fell short. ",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "How to Stop Doubting Your Greatness",
+      "author": "Jen Sincero",
+      "totalPage": "272",
+      "curPage": "272",
+      "progress": 100,
+      "status": "To Read",
+      "favorite": false,
+      "rating": 5,
+      "description": "The first ever self-development book to help millions of people around the globe transform their live",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Self-development",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 2,
+          "content": "The book had potential, with interesting ideas, but it didn’t fully deliver",
+          "favorite": false
+        }
+      ]
+    },
+    {
+      "id": "10",
       "name": "How to Win Friends Influence People",
       "author": "Dale Carnegie",
       "totalPage": "320",
@@ -114,7 +252,143 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": []
+      "quote": [
+        {
+          "id": 1,
+          "content": "An instant favorite. The book kept me hooked from start to finish with its twists and emotional depth",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": false,
+      "rating": 5,
+      "description": "A classic work on how to lead a successful life",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://product.hstatic.net/200000900535/product/think-and-grow-rich-13-nguyen-tac-nghi-giau-lam-giau_bia-1_6b3b106a27404b31a047620f59b956ac_1024x1024.jpg",
+      "genres": {
+        "name": "Personal-success",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 4,
+          "content": "The premise sounded intriguing, but the execution fell short. ",
+          "favorite": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Give to Grow",
+      "author": "Dale Carnegie",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "Read",
+      "favorite": true,
+      "rating": 5,
+      "description": "You can go after the job you want--and get it You can take the job you have--and improve it",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Business",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 2,
+          "content": "The book had potential, with interesting ideas, but it didn’t fully deliver",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "The Motivation Manifesto",
+      "author": "Brendon Burchard",
+      "totalPage": "256",
+      "curPage": "256",
+      "progress": 100,
+      "status": "Reading",
+      "favorite": true,
+      "rating": 4,
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "description": "The Motivation Manifesto is a poetic and powerful call to reclaim your life",
+      "img": "https://i.thriftbooks.com/api/imagehandler/m/AC1C835EA6C7E7F585EC3F889D296016462B5796.jpeg",
+      "genres": {
+        "name": "Motivation",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 1,
+          "content": "The themes were profound, and the author’s storytelling skills were unmatched.",
+          "favorite": false
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "How to Stop Doubting Your Greatness",
+      "author": "Jen Sincero",
+      "totalPage": "272",
+      "curPage": "272",
+      "progress": 100,
+      "status": "To Read",
+      "favorite": false,
+      "rating": 5,
+      "description": "The first ever self-development book to help millions of people around the globe transform their live",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Self-development",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 4,
+          "content": "The plot was weak, the characters were flat, and the pacing dragged. I struggled to finish it.",
+          "favorite": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "How to Win Friends Influence People",
+      "author": "Dale Carnegie",
+      "totalPage": "320",
+      "curPage": "320",
+      "progress": 100,
+      "status": "To Read",
+      "favorite": true,
+      "rating": 5,
+      "description": "You can go after the job you want--and get it You can take the job you have--and improve it",
+      "startDate": "22/12/2024",
+      "endDate": "22/12/2024",
+      "img": "https://m.media-amazon.com/images/I/41OksZQYt+L._SL350_.jpg",
+      "genres": {
+        "name": "Business",
+        "icon": "fa-solid fa-head-side-virus"
+      },
+      "quote": [
+        {
+          "id": 2,
+          "content": "Good for light reading, but don’t expect much depth. ",
+          "favorite": false
+        }
+      ]
     }
   ]
 }

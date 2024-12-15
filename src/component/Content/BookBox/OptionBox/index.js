@@ -18,7 +18,7 @@ function StatusOptionBox(props) {
 
 function GenresOptionBox(props) {
     let genresElements = [];
-    props.listGenres.forEach((element) => {
+    props.listGenres.forEach((element,index) => {
         genresElements.push(
             <div
                 style={{ height: '3rem' }}
@@ -29,6 +29,7 @@ function GenresOptionBox(props) {
                         name: element.genres.name,
                     })
                 }
+                key={ index}
             >
                 <i className={element.genres.icon}></i>
                 <p className="mb-0"> {element.genres.name}</p>

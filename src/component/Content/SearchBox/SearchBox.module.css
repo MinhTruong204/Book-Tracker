@@ -1,0 +1,47 @@
+.content {
+    font-size: 1.5rem;
+}
+.searchBar {
+    margin-bottom: 3rem;
+}
+.input {
+    width: 50rem;
+}
+
+.button {
+    width: 10rem;
+}
+
+.input , .button {
+    height: 3rem;
+}
+.filter {
+    height: 3rem;
+}
+.filterOption {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: var(--text-blur) 1px solid;
+    border-radius: 5px;
+    width: 8rem;
+    cursor: pointer;
+    color: var(--text-blur);  
+    transition: 0.1s ease-in-out;
+}
+
+.filterOption:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+.genresOptionBox > div{
+    margin-top: 0;
+}
+.statusOptionBox {
+    margin-top: -4rem;
+}
+.timeOption {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

@@ -4,18 +4,18 @@ import Container from 'react-bootstrap/Container';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import CloseButton from 'react-bootstrap/CloseButton';
 
-import { StatusOptionBox, StatusOption, TextOption, RatingOption, GenresOptionBox } from './OptionBox/OptionBox';
+import { StatusOptionBox, StatusOption, TextOption, RatingOption, GenresOptionBox } from './OptionBox';
 import { ActiveInputContext, ActiveInputProvider } from '../Context/ActiveInputContext';
 import style from './BookBox.module.css';
 
 import { DataContext } from '~/component/Content/Context/DataContext';
 import { handleData } from '~/component/Content/Context/ApiRequest';
 function BookBox(props) {
-    console.log(props.data)
+    console.log(props.data);
     const [activeInput, setActiveInput] = useState(null);
     const [data, setData] = useState(props.data);
     const [img, setImg] = useState(data.img);
-    const allData = useContext(DataContext)
+    const allData = useContext(DataContext);
     const checkRerender = useRef(false);
     function handleAciveInput(name) {
         setActiveInput(name);
@@ -52,9 +52,8 @@ function BookBox(props) {
                 Math.floor((parseInt(curPageElement.innerHTML) / parseInt(totalPageElement.innerHTML)) * 100) || 0,
             rating: ratingElement != undefined ? ratingElement.length : '',
             img: imageElement != undefined ? imageElement.src : '',
-            id: props.type == 'new' ? (parseInt(allData[allData.length - 1].id) + 1 ).toString() : data.id,
+            id: props.type == 'new' ? (parseInt(allData[allData.length - 1].id) + 1).toString() : data.id,
         });
-
     }
     const rerender = useMemo(() => {
         if (checkRerender.current) handleData(data, props.type == 'new' ? 'POST' : 'PUT');
@@ -62,7 +61,7 @@ function BookBox(props) {
     }, [data]);
 
     function deleteData() {
-        handleData(data, "DELETE")
+        handleData(data, 'DELETE');
     }
     try {
         return (
@@ -107,13 +106,13 @@ function BookBox(props) {
                                         handleAciveInput={handleAciveInput}
                                         activeInput={activeInput}
                                     ></InfoItem>
-                                     <InfoItem
+                                    <InfoItem
                                         type="startDate"
                                         data={data.startDate}
                                         handleAciveInput={handleAciveInput}
                                         activeInput={activeInput}
                                     ></InfoItem>
-                                     <InfoItem
+                                    <InfoItem
                                         type="endDate"
                                         data={data.endDate}
                                         handleAciveInput={handleAciveInput}
@@ -145,17 +144,18 @@ function BookBox(props) {
                                     ></InfoItem>
                                 </ul>
                             </div>
-                            <div className='d-flex justify-content-end'>
-                                {props.type == "old" && 
-                                <button
-                                    style={{ height: '3rem' }}
-                                    type="button"
-                                    className="btn btn-primary m-3"
-                                    onClick={() => deleteData()}
-                                >
-                                    Delete
-                                </button>}
-                                
+                            <div className="d-flex justify-content-end">
+                                {props.type == 'old' && (
+                                    <button
+                                        style={{ height: '3rem' }}
+                                        type="button"
+                                        className="btn btn-primary m-3"
+                                        onClick={() => deleteData()}
+                                    >
+                                        Delete
+                                    </button>
+                                )}
+
                                 <button
                                     style={{ height: '3rem' }}
                                     type="button"
@@ -279,23 +279,23 @@ function InfoItem(props) {
             );
             break;
         case 'endDate':
-        return (
-            <li className={style.detailInfo__item}>
-                <span className={style.detailInfo__name}>
-                    <i className="fa-solid fa-clipboard"></i>
-                    End Date
-                </span>
-                <div className={style.detailInfo__describe} onClick={() => props.handleAciveInput(props.type)}>
-                    <TextOption
-                        unActiveInput={props.handleAciveInput}
-                        active={props.activeInput == 'endDate'}
-                        text={props.data}
-                        type={props.type}
-                    ></TextOption>
-                </div>
-            </li>
-        );
-        break;
+            return (
+                <li className={style.detailInfo__item}>
+                    <span className={style.detailInfo__name}>
+                        <i className="fa-solid fa-clipboard"></i>
+                        End Date
+                    </span>
+                    <div className={style.detailInfo__describe} onClick={() => props.handleAciveInput(props.type)}>
+                        <TextOption
+                            unActiveInput={props.handleAciveInput}
+                            active={props.activeInput == 'endDate'}
+                            text={props.data}
+                            type={props.type}
+                        ></TextOption>
+                    </div>
+                </li>
+            );
+            break;
         case 'description':
             return (
                 <li className={style.detailInfo__item}>

@@ -6,6 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 import Header from '~/component/Content/Header';
 import Section from '~/component/Content/Section';
 import {BookBox} from '~/component/Content/BookBox';
+import { SearchBox } from '~/component/Content/SearchBox';
 import { DataContext } from './Context/DataContext';
 
 function Content() {
@@ -90,6 +91,8 @@ function Content() {
                                   data={e.data}
                                 ></Section>;
                     })}
+                    <SearchBox></SearchBox>
+
                 </Container>
             </DataContext.Provider>
         );

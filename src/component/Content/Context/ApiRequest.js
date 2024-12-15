@@ -1,6 +1,6 @@
 const { createContext } = require('react');
 
-const apiData = 'http://192.168.155.2:4000/data';
+const apiData = 'http://192.168.23.2:4000/data';
 
 function handleData(data, method) {
     const url = method == 'POST' ? apiData : apiData + `/${data.id}`;
