@@ -35,7 +35,7 @@ function GenresBox(props) {
         <div className={style.genresBox}>
             <div className={`${style.content} px-3 d-flex flex-column`}>
                 <CloseButton className="align-self-end" onClick={() => props.handleCloseGenresBox()}></CloseButton> 
-                <h1 className="text-center my-5">{props.name}</h1>
+                <h1 className ={`text-center my-5 ${style.title}`}> {props.name}</h1>
                 {bookElement}
             </div>
                  

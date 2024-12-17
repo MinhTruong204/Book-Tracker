@@ -31,6 +31,7 @@ function SearchBox(props) {
     console.log(data)
     return (
         <div>
+            <h2 className={style.sectionName}>Filter</h2>
             <div className={`${style.content} d-flex flex-column align-items-center mb-5`}>
                 <div className={`${style.searchBar} `}>
                     <input className={style.input} placeholder="Search"></input>

@@ -5,8 +5,8 @@
       "name": "Think and Grow Rich",
       "author": "Napoleon Hill",
       "totalPage": "320",
-      "curPage": "320",
-      "progress": 100,
+      "curPage": "20",
+      "progress": 6,
       "status": "Reading",
       "favorite": true,
       "rating": 5,
@@ -22,7 +22,7 @@
         {
           "id": 1,
           "content": "Absolutely loved it! The story was gripping, the characters felt real, and the writing was beautiful",
-          "favorite": false
+          "favorite": true
         }
       ]
     },
@@ -46,7 +46,7 @@
       },
       "quote": [
         {
-          "id": 4,
+          "id": 2,
           "content": "I wanted to like it, but the writing style was confusing, and the story lacked emotional depth.",
           "favorite": false
         }
@@ -72,7 +72,7 @@
       },
       "quote": [
         {
-          "id": 2,
+          "id": 3,
           "content": "There were moments of brilliance, but the overall story felt disjointed.",
           "favorite": true
         }
@@ -96,13 +96,7 @@
         "name": "Self-development",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 1,
-          "content": "Absolutely loved it! The story was gripping, the characters felt real, and the writing was beautiful",
-          "favorite": false
-        }
-      ]
+      "quote": []
     },
     {
       "id": "5",
@@ -122,13 +116,7 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 4,
-          "content": "I wanted to like it, but the writing style was confusing, and the story lacked emotional depth.",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "6",
@@ -148,13 +136,7 @@
         "name": "Personal-success",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 2,
-          "content": "There were moments of brilliance, but the overall story felt disjointed.",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "7",
@@ -174,13 +156,7 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 1,
-          "content": "An instant favorite. The book kept me hooked from start to finish with its twists and emotional depth",
-          "favorite": false
-        }
-      ]
+      "quote": []
     },
     {
       "id": "8",
@@ -200,13 +176,7 @@
         "name": "Motivation",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 4,
-          "content": "The premise sounded intriguing, but the execution fell short. ",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "9",
@@ -226,13 +196,7 @@
         "name": "Self-development",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 2,
-          "content": "The book had potential, with interesting ideas, but it didn’t fully deliver",
-          "favorite": false
-        }
-      ]
+      "quote": []
     },
     {
       "id": "10",
@@ -252,13 +216,7 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 1,
-          "content": "An instant favorite. The book kept me hooked from start to finish with its twists and emotional depth",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "11",
@@ -278,13 +236,7 @@
         "name": "Personal-success",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 4,
-          "content": "The premise sounded intriguing, but the execution fell short. ",
-          "favorite": false
-        }
-      ]
+      "quote": []
     },
     {
       "id": "12",
@@ -304,13 +256,7 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 2,
-          "content": "The book had potential, with interesting ideas, but it didn’t fully deliver",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "13",
@@ -330,13 +276,7 @@
         "name": "Motivation",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 1,
-          "content": "The themes were profound, and the author’s storytelling skills were unmatched.",
-          "favorite": false
-        }
-      ]
+      "quote": []
     },
     {
       "id": "14",
@@ -356,13 +296,7 @@
         "name": "Self-development",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 4,
-          "content": "The plot was weak, the characters were flat, and the pacing dragged. I struggled to finish it.",
-          "favorite": true
-        }
-      ]
+      "quote": []
     },
     {
       "id": "15",
@@ -382,13 +316,7 @@
         "name": "Business",
         "icon": "fa-solid fa-head-side-virus"
       },
-      "quote": [
-        {
-          "id": 2,
-          "content": "Good for light reading, but don’t expect much depth. ",
-          "favorite": false
-        }
-      ]
+      "quote": []
     }
   ]
 }

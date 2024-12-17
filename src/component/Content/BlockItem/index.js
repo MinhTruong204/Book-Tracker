@@ -2,7 +2,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, useRef } from 'react';
 
 import BookBox from '../BookBox';
 import { GenresBox } from '~/component/Content/GenresBox';
@@ -92,19 +92,23 @@ function RowItem(props) {
         case 'Quotes':
             return (
                 <Row className="mb-1">
-                    {props.data.map((e, i) => {
+                    
+                    {props.data.map((e, index) => {
+
+                        console.log(e)
                         if (e.addElement) {
                             return (
                                 <AddBlock
-                                    key={i}
+                                    key={index}
                                     pos={e.pos}
                                     numbercolumn={props.numbercolumn}
                                     type={props.sectionName}
                                 />
                             );
                         } else {
-                            return <QuoteItem key={i} data={e} />;
+                            return <QuoteItem key={index} data={e} />;
                         }
+
                     })}
                 </Row>
             );

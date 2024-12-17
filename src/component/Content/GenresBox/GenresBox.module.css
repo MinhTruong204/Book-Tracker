@@ -17,3 +17,8 @@
     background-color: white;
     border-radius: 1rem;
 }
+
+.title {
+    font-weight: bolder;
+    font-size: 4rem;
+}
